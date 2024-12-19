@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1734617962">
+  <File Type="BITSTR-BMM" Name="DAC_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="DAC_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="DAC_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="DAC_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="DAC.tcl"/>
+  <File Type="OPT-TIMING" Name="DAC_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="DAC_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="DAC_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="DAC_reports.tcl"/>
+  <File Type="OPT-DRC" Name="DAC_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="DAC.hwdef"/>
+  <File Type="PWROPT-DCP" Name="DAC_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="DAC_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="DAC_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="DAC_placed.dcp"/>
+  <File Type="PLACE-IO" Name="DAC_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="DAC_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="DAC_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="DAC_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="DAC_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="DAC_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="DAC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="DAC_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="DAC_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="DAC.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="DAC_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="DAC_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="DAC_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="DAC.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="DAC_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="DAC_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="DAC_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="DAC_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="DAC_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="DAC_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="DAC_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="DAC.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="DAC_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DAC_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DAC_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="DAC_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="DAC_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="DAC_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="DAC_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="DAC_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="DAC_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="DAC_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="DAC_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="DAC_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="DAC_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="DAC_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="DAC_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DAC_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DAC_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DAC_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DAC_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="DAC_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="DAC_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="DAC.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="DAC_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="DAC.rbt"/>
+  <File Type="BITSTR-NKY" Name="DAC.nky"/>
+  <File Type="PDI-FILE" Name="DAC.pdi"/>
+  <File Type="RCFI_FILE" Name="DAC.rcfi"/>
+  <File Type="CFI_FILE" Name="DAC.cfi"/>
+  <File Type="RNPI_FILE" Name="DAC.rnpi"/>
+  <File Type="NPI_FILE" Name="DAC.npi"/>
+  <File Type="RBD_FILE" Name="DAC.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="DAC.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="DAC.sysdef"/>
+  <File Type="BG-BGN" Name="DAC.bgn"/>
+  <File Type="BG-DRC" Name="DAC.drc"/>
+  <File Type="RDI-RDI" Name="DAC.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/LED_show.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ak_wave.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/jc_wave.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sin_wave.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DAC.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DAC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/DAC.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/DAC.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

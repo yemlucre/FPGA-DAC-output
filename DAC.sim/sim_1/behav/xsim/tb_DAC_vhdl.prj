@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DAC.srcs/sources_1/new/DAC.vhd" \
+"../../../../DAC.srcs/sources_1/new/LED_show.vhd" \
+"../../../../DAC.srcs/sources_1/new/ak_wave.vhd" \
+"../../../../DAC.srcs/sources_1/new/jc_wave.vhd" \
+"../../../../DAC.srcs/sources_1/new/sin_wave.vhd" \
+"../../../../DAC.srcs/sim_1/new/tb_DAC.vhd" \
+
+# Do not sort compile order
+nosort

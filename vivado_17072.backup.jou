@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 18 02:56:24 2024
+# Process ID: 17072
+# Current directory: D:/DX2201_lucre/DAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22064 D:\DX2201_lucre\DAC\DAC.xpr
+# Log file: D:/DX2201_lucre/DAC/vivado.log
+# Journal file: D:/DX2201_lucre/DAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DX2201_lucre/DAC/DAC.xpr
+update_compile_order -fileset sources_1

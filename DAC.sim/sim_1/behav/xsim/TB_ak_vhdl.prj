@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DAC.srcs/sources_1/new/ak_wave.vhd" \
+"../../../../DAC.srcs/sim_1/new/TB_ak.vhd" \
+
+# Do not sort compile order
+nosort
