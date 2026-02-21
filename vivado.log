@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec 19 21:39:09 2024
+# Process ID: 21216
+# Current directory: D:/DX2201_lucre/DAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18844 D:\DX2201_lucre\DAC\DAC.xpr
+# Log file: D:/DX2201_lucre/DAC/vivado.log
+# Journal file: D:/DX2201_lucre/DAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DX2201_lucre/DAC/DAC.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilink/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.PRIMARY_PORT {clk_in1} CONFIG.CLK_OUT1_PORT {clk_out1}] [get_ips clk_wiz]
+generate_target all [get_files  D:/DX2201_lucre/DAC/DAC.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz'...
+catch { config_ip_cache -export [get_ips -all clk_wiz] }
+export_ip_user_files -of_objects [get_files D:/DX2201_lucre/DAC/DAC.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_synth_1
+launch_runs clk_wiz_synth_1 -jobs 8
+[Thu Dec 19 21:41:04 2024] Launched clk_wiz_synth_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/clk_wiz_synth_1/runme.log
+export_simulation -of_objects [get_files D:/DX2201_lucre/DAC/DAC.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -directory D:/DX2201_lucre/DAC/DAC.ip_user_files/sim_scripts -ip_user_files_dir D:/DX2201_lucre/DAC/DAC.ip_user_files -ipstatic_source_dir D:/DX2201_lucre/DAC/DAC.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/modelsim} {questa=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/questa} {riviera=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/riviera} {activehdl=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilink/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DAC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_DAC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DX2201_lucre/DAC/DAC.gen/sources_1/ip/clk_wiz/clk_wiz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DX2201_lucre/DAC/DAC.gen/sources_1/ip/clk_wiz/clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz
+"xvhdl --incr --relax -prj tb_DAC_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DAC'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+"xelab -wto 36d9b03a38e24c26afcf07518bb3cdff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DAC_behav xil_defaultlib.tb_DAC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilink/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 36d9b03a38e24c26afcf07518bb3cdff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DAC_behav xil_defaultlib.tb_DAC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-718] formal port <clk_out1> does not exist in entity <clk_wiz>.  Please compare the definition of block <clk_wiz> to its component declaration and its instantion to detect the mismatch. [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:22]
+ERROR: [VRFC 10-718] formal port <clk_in1> does not exist in entity <clk_wiz>.  Please compare the definition of block <clk_wiz> to its component declaration and its instantion to detect the mismatch. [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:23]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilink/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DAC' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_DAC_vlog.prj"
+"xvhdl --incr --relax -prj tb_DAC_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DAC'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+"xelab -wto 36d9b03a38e24c26afcf07518bb3cdff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DAC_behav xil_defaultlib.tb_DAC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilink/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 36d9b03a38e24c26afcf07518bb3cdff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DAC_behav xil_defaultlib.tb_DAC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.LED_show [led_show_default]
+Compiling architecture behavioral of entity xil_defaultlib.jc_wave [jc_wave_default]
+Compiling architecture behavioral of entity xil_defaultlib.ak_wave [ak_wave_default]
+Compiling architecture behavioral of entity xil_defaultlib.sine_wave [sine_wave_default]
+Compiling architecture behavioral of entity xil_defaultlib.DAC [dac_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_dac
+Built simulation snapshot tb_DAC_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim/xsim.dir/tb_DAC_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 19 21:43:30 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1326.055 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_DAC_behav -key {Behavioral:sim_1:Functional:tb_DAC} -tclbatch {tb_DAC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_DAC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_DAC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1367.508 ; gain = 41.453
+run all
+run 50 s
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/DX2201_lucre/DAC/DAC.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 19 21:44:05 2024] Launched synth_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/synth_1/runme.log
+[Thu Dec 19 21:44:05 2024] Launched impl_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/DX2201_lucre/DAC/DAC.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 19 21:49:20 2024] Launched synth_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/synth_1/runme.log
+[Thu Dec 19 21:49:20 2024] Launched impl_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1555.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2209.949 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2209.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2209.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2384.332 ; gain = 1006.551
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 2394.867 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3900.801 ; gain = 1505.934
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim/simulate.log"
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/DX2201_lucre/DAC/DAC.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Dec 19 22:02:52 2024] Launched synth_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/synth_1/runme.log
+[Thu Dec 19 22:02:52 2024] Launched impl_1...
+Run output will be captured here: D:/DX2201_lucre/DAC/DAC.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4019.395 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: DAC
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 4281.004 ; gain = 261.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DAC' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:19]
+INFO: [Synth 8-3491] module 'LED_show' declared at 'D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/LED_show.vhd:6' bound to instance 'led_inst' of component 'LED_show' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'LED_show' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/LED_show.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'LED_show' (1#1) [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/LED_show.vhd:13]
+INFO: [Synth 8-3491] module 'jc_wave' declared at 'D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/jc_wave.vhd:5' bound to instance 'jc_inst' of component 'jc_wave' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'jc_wave' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/jc_wave.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'jc_wave' (2#1) [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/jc_wave.vhd:12]
+INFO: [Synth 8-3491] module 'ak_wave' declared at 'D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/ak_wave.vhd:5' bound to instance 'ak_inst' of component 'ak_wave' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ak_wave' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/ak_wave.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ak_wave' (3#1) [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/ak_wave.vhd:12]
+INFO: [Synth 8-3491] module 'sine_wave' declared at 'D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/sin_wave.vhd:7' bound to instance 'sin_inst' of component 'sine_wave' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'sine_wave' [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/sin_wave.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sine_wave' (4#1) [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/sin_wave.vhd:14]
+WARNING: [Synth 8-614] signal 'led0' is read in the process but is not in the sensitivity list [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:89]
+WARNING: [Synth 8-614] signal 'led1' is read in the process but is not in the sensitivity list [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:89]
+WARNING: [Synth 8-614] signal 'led2' is read in the process but is not in the sensitivity list [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'DAC' (5#1) [D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4312.273 ; gain = 292.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4330.109 ; gain = 310.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4330.109 ; gain = 310.715
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4330.109 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/DX2201_lucre/DAC/DAC.srcs/constrs_1/new/DAC.xdc]

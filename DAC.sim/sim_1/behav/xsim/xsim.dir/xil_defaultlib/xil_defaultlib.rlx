@@ -1,0 +1,16 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/DX2201_lucre/DAC/DAC.gen/sources_1/ip/clk_wiz/clk_wiz.v,1734615158,verilog,,,,clk_wiz,,,../../../../DAC.gen/sources_1/ip/clk_wiz,,,,,
+D:/DX2201_lucre/DAC/DAC.gen/sources_1/ip/clk_wiz/clk_wiz_clk_wiz.v,1734615663,verilog,,D:/DX2201_lucre/DAC/DAC.gen/sources_1/ip/clk_wiz/clk_wiz.v,,clk_wiz_clk_wiz,,,../../../../DAC.gen/sources_1/ip/clk_wiz,,,,,
+D:/DX2201_lucre/DAC/DAC.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sim_1/new/TB_JC.vhd,1734451953,vhdl,,,,tb_jc,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sim_1/new/TB_ak.vhd,1734452704,vhdl,,,,tb_ak,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sim_1/new/tb_DAC.vhd,1734612537,vhdl,,,,tb_dac,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sim_1/new/tb_sin.vhd,1734458726,vhdl,,,,tb_sin,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/DAC.vhd,1734615794,vhdl,,,,dac,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/LED_show.vhd,1734482599,vhdl,,,,led_show,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/ak_wave.vhd,1734450667,vhdl,,,,ak_wave,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/jc_wave.vhd,1734452377,vhdl,,,,jc_wave,,,,,,,,
+D:/DX2201_lucre/DAC/DAC.srcs/sources_1/new/sin_wave.vhd,1734450708,vhdl,,,,sine_wave,,,,,,,,

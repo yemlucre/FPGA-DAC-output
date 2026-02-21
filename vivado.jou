@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec 19 21:39:09 2024
+# Process ID: 21216
+# Current directory: D:/DX2201_lucre/DAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18844 D:\DX2201_lucre\DAC\DAC.xpr
+# Log file: D:/DX2201_lucre/DAC/vivado.log
+# Journal file: D:/DX2201_lucre/DAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/DX2201_lucre/DAC/DAC.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.PRIMARY_PORT {clk_in1} CONFIG.CLK_OUT1_PORT {clk_out1}] [get_ips clk_wiz]
+generate_target all [get_files  D:/DX2201_lucre/DAC/DAC.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz] }
+export_ip_user_files -of_objects [get_files D:/DX2201_lucre/DAC/DAC.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_synth_1
+launch_runs clk_wiz_synth_1 -jobs 8
+wait_on_run clk_wiz_synth_1
+export_simulation -of_objects [get_files D:/DX2201_lucre/DAC/DAC.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -directory D:/DX2201_lucre/DAC/DAC.ip_user_files/sim_scripts -ip_user_files_dir D:/DX2201_lucre/DAC/DAC.ip_user_files -ipstatic_source_dir D:/DX2201_lucre/DAC/DAC.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/modelsim} {questa=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/questa} {riviera=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/riviera} {activehdl=D:/DX2201_lucre/DAC/DAC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation
+source tb_DAC.tcl
+run all
+run 50 s
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/DX2201_lucre/DAC/DAC.runs/impl_1/DAC.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
